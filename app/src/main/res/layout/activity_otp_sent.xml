@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E8C872"
+    tools:context=".otp_sentActivity">
+
+    <ImageView
+        android:layout_width="211dp"
+        android:layout_height="182dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/otp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verification"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:text="We will send you one time password on your phone number"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.yasserakbbach.phonenumberpicker.PhoneNumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            app:defaultCountry="in"
+            app:outlineBorderColor="@color/black"
+            app:textColor="@color/black"
+            app:textSize="20dp">
+
+        </com.yasserakbbach.phonenumberpicker.PhoneNumberPicker>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_otp" />
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:layout_width="289dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FFF3CF"
+        android:layout_gravity="center"
+        android:id="@+id/btn_otp_sent"
+        android:text="GET OTP"
+        android:textColor="@color/black">
+
+    </Button>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/pg">
+
+    </ProgressBar>
+
+
+</LinearLayout>

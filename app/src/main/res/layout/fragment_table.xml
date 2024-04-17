@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TableFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+<!--       <ImageView-->
+<!--           android:layout_width="wrap_content"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:src="@drawable/back_arrow"-->
+<!--           android:layout_marginTop="10dp"-->
+<!--           android:layout_marginStart="10dp">-->
+
+<!--       </ImageView>-->
+
+
+       <ImageView
+           android:id="@+id/img_table5"
+           android:layout_width="match_parent"
+           android:layout_height="222dp"
+           android:src="@mipmap/table5"
+           android:layout_marginTop="20dp"
+           android:visibility="gone">
+
+       </ImageView>
+
+
+       <ImageView
+           android:id="@+id/img_table4"
+           android:layout_width="match_parent"
+           android:layout_height="222dp"
+           android:src="@mipmap/table4"
+           android:layout_marginTop="20dp"
+           android:visibility="gone">
+
+       </ImageView>
+
+       <ImageView
+           android:id="@+id/img_table3"
+           android:layout_width="match_parent"
+           android:layout_height="222dp"
+           android:src="@mipmap/table3"
+           android:layout_marginTop="20dp"
+           android:visibility="gone">
+
+       </ImageView>
+
+
+       <ImageView
+           android:id="@+id/img_table2"
+           android:layout_width="match_parent"
+           android:layout_height="222dp"
+           android:src="@mipmap/table2"
+           android:layout_marginTop="20dp"
+           android:visibility="gone">
+
+       </ImageView>
+
+
+
+       <ImageView
+           android:id="@+id/img_table1"
+           android:layout_width="match_parent"
+           android:layout_height="222dp"
+           android:src="@mipmap/table1"
+           android:layout_marginTop="20dp"
+           android:visibility="visible">
+
+       </ImageView>
+
+       <TextView
+           android:id="@+id/tvtnumber"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="gone">
+
+       </TextView>
+
+       <TextView
+           android:id="@+id/id"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="gone">
+
+       </TextView>
+
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Number Of Guest"
+               android:textColor="@color/black"
+               android:layout_marginTop="20dp"
+               android:layout_marginStart="20dp">
+
+           </TextView>
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="20dp">
+
+               <TextView
+                   android:id="@+id/showguest"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:visibility="gone"
+                   >
+
+               </TextView>
+
+               <RadioGroup
+                   android:id="@+id/rdg_numguest"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <RadioButton
+                       android:id="@+id/radio1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="1"
+                       android:checked="true"
+                       android:textAlignment="center"
+                       android:layout_marginStart="20dp"
+
+                       android:button="@android:color/transparent"
+                       android:background="@drawable/radio_selector_table"
+                       android:textSize="15dp">
+
+                   </RadioButton>
+
+                   <RadioButton
+                       android:id="@+id/radio2"
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="2"
+                       android:textAlignment="center"
+                       android:layout_marginStart="20dp"
+                       android:button="@android:color/transparent"
+                       android:background="@drawable/radio_selector_table"
+                       android:textSize="15dp">
+
+                   </RadioButton>
+
+                   <RadioButton
+                       android:id="@+id/radio3"
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="3"
+                       android:textAlignment="center"
+                       android:layout_marginStart="20dp"
+
+                       android:button="@android:color/transparent"
+                       android:background="@drawable/radio_selector_table"
+                       android:textSize="15dp">
+
+                   </RadioButton>
+
+
+                   <RadioButton
+                       android:id="@+id/radio4"
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="4"
+                       android:textAlignment="center"
+                       android:layout_marginStart="20dp"
+
+                       android:button="@android:color/transparent"
+                       android:background="@drawable/radio_selector_table"
+                       android:textSize="15dp">
+
+                   </RadioButton>
+
+
+                   <RadioButton
+                       android:id="@+id/radio5"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="5+"
+                       android:textAlignment="center"
+                       android:layout_marginStart="20dp"
+
+                       android:button="@android:color/transparent"
+                       android:background="@drawable/radio_selector_table"
+                       android:textSize="15dp">
+
+                   </RadioButton>
+
+
+
+               </RadioGroup>
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginTop="20dp"
+                   android:textColor="@color/black"
+                   android:text="Select date For Reservation">
+
+               </TextView>
+
+
+               <Button
+                   android:id="@+id/btn_date"
+                   android:layout_width="256dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:backgroundTint="@color/teal_200"
+                   android:layout_marginTop="20dp"
+                   android:text="select Date">
+
+               </Button>
+
+
+               <TextView
+
+                   android:id="@+id/tvshow_date"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="show date"
+                   android:gravity="center"
+                   android:layout_marginTop="20dp"
+                   android:textSize="20dp"
+                   android:textColor="@color/black">
+
+               </TextView>
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginTop="20dp"
+                   android:textColor="@color/black"
+                   android:text="Select Time For Reservation">
+
+               </TextView>
+
+
+               <Button
+                   android:id="@+id/btn_time"
+                   android:layout_width="256dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:backgroundTint="@color/teal_200"
+                   android:layout_marginTop="20dp"
+                   android:text="select Time">
+
+               </Button>
+
+
+               <TextView
+
+                   android:id="@+id/tvshow_time"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="show time"
+                   android:gravity="center"
+                   android:layout_marginTop="20dp"
+                   android:textSize="20dp"
+                   android:textColor="@color/black">
+
+               </TextView>
+
+
+
+
+
+           </LinearLayout>
+
+
+           <Button
+               android:id="@+id/btn_table_boook"
+               android:layout_width="331dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+
+               android:backgroundTint="#E48F45"
+               android:layout_marginTop="50dp"
+               android:text="book table">
+
+           </Button>
+
+
+
+
+       </LinearLayout>
+       </ScrollView>
+
+
+
+
+
+
+   </LinearLayout>
+
+
+
+
+</FrameLayout>

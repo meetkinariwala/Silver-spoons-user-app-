@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="188dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:contentPadding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:id="@+id/img_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/chinese">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvdishname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Noodles"
+                    android:textSize="12dp"
+                    android:gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvmenuid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvctype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </TextView>
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvdescription"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:text="A clear soup served with noodles and garlic with condiments and spices"-->
+<!--                    android:textColor="#3D3B40"-->
+<!--                    android:textSize="10dp">-->
+
+<!--                </TextView>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="price:"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_marginStart="5dp">-->
+<!--                        -->
+<!--                    </TextView>-->
+
+                    <TextView
+                        android:id="@+id/tvprice"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:textFontWeight="700"
+                        android:text="Rs.300"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@+id/button2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <co.ankurg.expressview.ExpressView
+                        android:id="@+id/likeButton"
+                        android:layout_width="40dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="10dp"/>
+
+
+
+
+
+
+
+                    <!--                    <Button-->
+<!--                        android:id="@+id/btn_cart"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="0.5"-->
+<!--                        android:layout_height="38dp"-->
+<!--                       android:backgroundTint="@color/teal_200"-->
+<!--                        android:text="Add"-->
+<!--                        android:textSize="10dp"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintStart_toEndOf="@+id/tvprice"-->
+
+<!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

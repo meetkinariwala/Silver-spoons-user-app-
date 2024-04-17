@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "132969783586",
+    "project_id": "silverspoonss",
+    "storage_bucket": "silverspoonss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132969783586:android:76b2fc0ab13bf74edf457b",
+        "android_client_info": {
+          "package_name": "com.example.resturentsilverspoons"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX3Lp80DCxIHD-Sd-0eurNVOI9fXfCQn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

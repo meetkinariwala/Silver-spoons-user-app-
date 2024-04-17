@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="320dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="335dp"
+        android:layout_height="279dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="28dp"
+        app:cardCornerRadius="20dp"
+        app:contentPadding="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+                <ImageView
+                    android:id="@+id/img_Coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="132dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/silverspoon">
+
+                </ImageView>
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvCoupontitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Title"
+                android:textColor="@color/teal_200"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvcoupondesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Coupon description"
+                android:textColor="@color/black"
+                android:textSize="15dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="59dp"
+                    android:layout_height="match_parent"
+                    android:text="Code:"
+                    android:gravity="center">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/tvCoupnCode"
+                    android:layout_width="202dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_coupon"
+                    android:padding="4dp"
+                    android:textAlignment="center"
+                    android:text="Coupon code"
+                    android:textColor="@color/white"
+                    android:textSize="17dp">
+
+                </TextView>
+
+                <ImageButton
+
+                    android:id="@+id/btncodecopy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/copy">
+
+                </ImageButton>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvcouponid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvcoupondiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

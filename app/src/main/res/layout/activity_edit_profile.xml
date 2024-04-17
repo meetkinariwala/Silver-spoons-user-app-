@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Edit_profile_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:background="@drawable/wave_haikei"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/back_arrow"
+                android:layout_width="35dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/teal_200"
+                android:clickable="true"
+                android:src="@drawable/back_arrow">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="5dp"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="153dp"
+            android:layout_height="117dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/profile"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tvchangeimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Change Or Update Profile"
+            android:textColor="#AF932C"
+            android:clickable="true"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="profile manage"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="19dp"
+                    android:layout_marginStart="20dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20dp">
+
+                </TextView>
+
+               <EditText
+                   android:id="@+id/tvetusername"
+                   android:layout_width="match_parent"
+                   android:layout_height="49dp"
+                   android:layout_marginTop="0dp"
+                   android:layout_marginHorizontal="20dp"
+                   android:drawablePadding="10dp"
+                   android:padding="10dp"
+                   android:textColor="@color/black"
+                   android:text="Meet">
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="password"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/tvetpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:text="28982197237"
+                    android:inputType="textPassword">
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/tvetemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:text="Meet@gmail.com"
+                    >
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone no"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/tvetphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:text="28982197237"
+                    android:inputType="number">
+                </EditText>
+
+
+                <Button
+
+                    android:id="@+id/btnupdateprofile"
+                    android:layout_width="229dp"
+                    android:layout_height="61dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/teal_200"
+                    android:text="Update Profile"
+                    android:textColor="@color/black">
+
+
+                </Button>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+</LinearLayout>

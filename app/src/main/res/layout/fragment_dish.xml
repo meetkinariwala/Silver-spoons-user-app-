@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/wave_haikei_dish"
+    android:orientation="vertical"
+    tools:context=".fragment.DishFragment">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:clickable="true"
+        android:backgroundTint="@color/teal_200"
+        android:id="@+id/back_arrow"
+        android:src="@drawable/back_arrow">
+
+    </ImageButton>
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
+
+
+
+
+            <ImageView
+                android:id="@+id/image_dish"
+                android:layout_width="match_parent"
+                android:layout_height="173dp"
+                android:layout_marginTop="140dp"
+                android:src="@mipmap/burger">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvdname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="Burger"
+                    android:textColor="@color/teal_200"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/back_in_time">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50 min"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="30dp"
+                        android:src="@drawable/star">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.3"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:src="@drawable/calories">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200cal"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:id="@+id/tvdprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="₹230.0"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#454545"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Description"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="281dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvdesc"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="A tasty soup prepared with vegetables simmered in hot and spicy stock and served with fried noodles."
+                        android:textColor="#61677A">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="25dp"
+                        android:text="ingredient"
+                        android:textColor="@color/teal_200"
+                        android:textSize="20dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:layout_width="341dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvingridient"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="A tasty souetabld in hot andA tasty soup prepared with vegetables simmered in hot andA tasty soup prepared with vegetables simmered in hot andA tasty soup prepared with vegetables simmered in hot andA tasty soup prepared with vegetables simmered in hot and"
+                        android:textColor="#61677A">
+
+                    </TextView>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnaddtocart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:backgroundTint="@color/teal_200"
+            android:drawableLeft="@drawable/shopping_cart"
+            android:text="AddtoCart">
+
+        </Button>
+
+
+    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+<!--        </LinearLayout>-->
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+
+</LinearLayout>
+
